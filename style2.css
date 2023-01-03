@@ -242,7 +242,7 @@ svg {
 } */
 
 #message {
-    margin: 4% 0px;
+    margin: 8% 0px;
     background: linear-gradient(rgb(30, 32, 34), rgb(124, 11, 39));
 
     width: 100%;
@@ -417,7 +417,6 @@ svg {
 #reveal:hover {
     color: rgb(192, 184, 184);
     background: rgb(14, 14, 17);
-    border: 1px solid #fff;
 }
 
 
@@ -514,7 +513,7 @@ svg {
     padding-bottom: 0px;
     margin-top: 25%;
 
-    line-height: 6px;
+    line-height: 9px;
     /* border: 1px solid #fff; */
 }
 
@@ -540,7 +539,7 @@ canvas {
     position: fixed;
     background-color: #F8F4EA;
     top: -2%;
-    left: 45%;
+    left: 50%;
     transform: translateX(-50%) translateY(50%);
     border-radius: 15px;
     font-size: 20px;
