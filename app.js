@@ -110,6 +110,7 @@ console.log(questionNum)
 // @@ Function Chinh 
 
 btn.addEventListener('click', function () {
+    myChart.style.display = 'none';
 
     letplayAudio.pause();
     level100Audio.play();

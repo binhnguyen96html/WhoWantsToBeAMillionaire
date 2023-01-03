@@ -8,71 +8,101 @@ body{
 
 
 #div1{
-    margin:360px auto 0px;
+    margin: 13% auto 0px;
     /* border: 1px solid #fff; */
     text-align: center;
-    /* border: 1px solid rgb(182, 19, 19); */
 }
+ 
+#div1 #btn1{
+    font-family: 'Kanit', sans-serif;
 
-#btn1{
-    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
+    background: linear-gradient(rgb(20, 20, 21), rgb(42, 9, 59));
     border-radius:50px;
-    border: 4px solid #fff;
+    border: 2px solid #fff;
     height: 80px;
     width: 400px;
     font-size: 25px;
     margin-bottom: 130px;
     color: rgb(213, 154, 27);
+    cursor: pointer;
 
 }
-#btn1:hover{
-    background-color: rgb(77, 14, 56);
+#div1 #btn1:hover{
+    color: rgb(192, 184, 184);
+    background: rgb(8, 25, 51);
 }
 
-#btn2{
+#div1 #btn2{
+    font-family: 'Kanit', sans-serif; 
+
     color: rgb(213, 154, 27);
     background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
-    border: 4px solid #fff;
+    border: 2px solid #fff;
     border-radius:50px;
     height: 70px;
     font-size: 25px;
     padding: 0px 50px;
-    
+    cursor: pointer;
+}
+#div1 #btn2:hover{
+    color: rgb(192, 184, 184);
+    background: rgb(8, 25, 51);
 }
 
+/* rule text area  */
 .text{
-    width: 90%;
-    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
-    font-size: 12px;
     position: fixed;
-    /* top: 5%; */
-    /* border: 1px solid #fff; */
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
+
+    width: 90%;
+    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
+    font-size: 11px;
     display: flex;
 }
+
 .text .paragraph{
-    margin: 0px 20px 0px 20px ;
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin: 20px auto ;
+
     color: #fff;
 
-    width: 100%;
     font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #fff; */
 }
 
 .text .paragraph p{
     width: 100%;
+    margin: 0px;
+    font-size: 10px;
+}
+.text .paragraph .line{
+    margin: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+.text .paragraph h3{
+    font-size: 25px;
+    margin: 0px;
+    margin: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+.text .paragraph h4{
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    margin: 10px 0px;
 }
 
 strong{
     color: rgb(213, 154, 27);
 }
 
-.close{
+.text .close{
     font-size: 20px;
     margin-left: 98%;
-    margin-top: 5px;
     margin-bottom: 0px;
 }
 
