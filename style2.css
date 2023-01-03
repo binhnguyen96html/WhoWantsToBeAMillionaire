@@ -1,0 +1,501 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-image: url('img/playBG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    font-size: 66px;
+    background: linear-gradient(rgba(16, 27, 44, 0.5), rgb(42, 9, 59, 0.5));
+    color: rgb(138, 99, 41);
+    padding-top: 30px;
+    font-family: 'Bitter', serif;
+    padding-left: 100px;
+}
+
+#seconds-count {
+    background-color: rgb(42, 38, 54);
+    position: fixed;
+    top: 15%;
+    right: 18%;
+    color: aliceblue;
+    border: none;
+    border-radius: 50%;
+}
+
+#seconds-count h2 {
+    text-align: center;
+    position: absolute;
+    line-height: 85px;
+    width: 100%;
+    font-size: 50px;
+}
+
+svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+    stroke-dasharray: 440;
+    /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+}
+
+
+#seconds-count2 {
+    background-color: rgb(42, 38, 54);
+    position: fixed;
+    top: 15%;
+    right: 18%;
+    color: aliceblue;
+    border: none;
+    border-radius: 50%;
+}
+
+#seconds-count2 h2 {
+    text-align: center;
+    position: absolute;
+    line-height: 85px;
+    width: 100%;
+    font-size: 50px;
+}
+.circle_animation2 {
+    stroke-dasharray: 440;
+    /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+}
+
+
+
+.changeColor {
+    color: red;
+    animation-name: example;
+    animation-duration: 0.4s;
+    animation-iteration-count: 24;
+}
+
+@keyframes example {
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+#new-question {
+    position: fixed;
+    border: none;
+    border-radius: 30px;
+    top: 18%;
+    left: 70px;
+    padding: 20px;
+    background: linear-gradient(rgba(16, 27, 44, 0.7), rgb(42, 9, 59, 1));
+    color: rgb(213, 220, 231);
+    border: 4px solid rgb(243, 242, 238);
+    text-transform: uppercase;
+    animation: blur 2s ease-out infinite;
+}
+@keyframes blur {
+    from {
+        text-shadow: 0px 0px 10px #fff,
+            0px -10px 100px #7B96B8;
+    }
+}
+
+.letPlayBtn {
+    position: fixed;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    background: linear-gradient(rgba(15, 16, 17, 0.7), rgb(59, 9, 34));
+    color: rgb(213, 220, 231);
+    border: 4px solid rgb(243, 242, 238);
+
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-size: 50px;
+
+    text-transform: uppercase;
+    animation: blur 2s ease-out infinite;
+
+}
+
+@keyframes blur {
+    from {
+        text-shadow: 0px 0px 10px #fff,
+            0px -10px 100px #7B96B8;
+    }
+}
+
+.stats {
+    position: fixed;
+    right: 10%;
+    top: 30px;
+    color: aliceblue;
+}
+
+.spacer {
+    height: 80px;
+    width: 100%;
+}
+
+#questionDiv {
+    position: fixed;
+    /* border: 1px solid #fff; */
+    left: 40%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+}
+
+#question {
+    font-size: 30px;
+    background-color: black;
+    border: 4px solid rgb(129, 129, 127);
+    color: beige;
+    border-radius: 30px;
+    width: 85%;
+    height: 60px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+}
+
+#answer-1,
+#answer-2,
+#answer-3,
+#answer-4 {
+    font-size: 28px;
+    border: 4px solid rgb(222, 163, 49);
+    color: beige;
+    border-radius: 30px;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+.btn {
+    font-size: 42px;
+    color: aliceblue;
+    background-color: #445ac5;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6677cf;
+}
+
+/* .pic {
+    position: fixed;
+    top: 40%;
+    border: 1px solid #fff;
+    width: 85%;
+    height: 20%;
+    z-index: 999999999999999999999;
+} */
+
+#message {
+    margin: 0px;
+    background: linear-gradient(rgb(30, 32, 34), rgb(124, 11, 39));
+
+    width: 100%;
+
+    color: rgb(191, 190, 187);
+    font-size: 60px;
+    line-height: 80px;
+    padding: 10px 0px 10px 50px;
+    /* border: 1px solid #fff; */
+
+}
+
+#tryAgain {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(rgb(174, 141, 212), rgb(42, 37, 58));
+    color: rgb(235, 201, 13);
+    padding: 10px 30px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    z-index: 9999999999999;
+}
+
+#message2 {
+    font-family: 'Bitter', serif;
+
+    position: relative;
+    color: rgb(222, 163, 49);
+    font-size: 80px;
+    padding: 150px 100px 150px 100px;
+    background: linear-gradient(rgba(163, 107, 42, 1), rgb(41, 14, 17));
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    width: 100%;
+    line-height: 50px;
+
+    animation-name: example2;
+    animation-duration: 3s;
+
+    top: -200px;
+    margin-left: -25px;
+    line-height: 100px;
+
+    z-index: 1;
+}
+
+.playAgain{
+    /* border: 1px solid #fff; */
+    width: 84%;
+    position: fixed;
+    top: 35%;
+
+}
+
+.playAgain #message3 {
+    /* border: 1px solid #fff; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 70px;
+    line-height: 50px;
+    font-family: 'Bitter', serif;
+
+    background: linear-gradient(rgba(16, 27, 44, 0.7), rgb(42, 9, 59, 1));
+
+    width: 100%;
+
+    color: rgb(222, 163, 49);
+
+    padding: 50px 0px 50px 50px;
+    animation: blur 5s ease-in-out;
+
+}
+
+@keyframes blur {
+    from {
+        text-shadow: 0px 0px 10px #fff,
+            0px -10px 100px #7B96B8;
+    }
+}
+
+@keyframes example2 {
+    0% {
+        background-color: red;
+        right: 0px;
+        left: 5px;
+    }
+
+    25% {
+        background-color: rgba(255, 94, 0, 1);
+        right: 5px;
+        left: 10px;
+    }
+
+    50% {
+        background-color: rgba(255, 0, 43, 1);
+        right: 10px;
+        left: 15px;
+    }
+
+    75% {
+        background-color: rgba(92, 0, 128, 1);
+        right: 15px;
+        left: 20px;
+    }
+
+    100% {
+        background-color: rgba(92, 0, 128, 1);
+        right: 20px;
+        left: 25px;
+    }
+}
+
+.playAgain #playAgain{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    background: linear-gradient(rgba(16, 27, 44, 1), rgb(42, 9, 59, 1));
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px;
+
+}
+
+
+
+#message4{
+    position: fixed;
+    top: 40%;
+    margin: 0px;
+    background: linear-gradient(rgba(16, 27, 44, 1), rgb(42, 9, 59, 1));
+
+    width: 80%;
+
+    color: rgb(222, 163, 49);
+    font-size: 60px;
+    line-height: 100px;
+    padding: 10px 50px 10px 50px;
+    /* margin-top: -20px; */
+    /* border: 1px solid #fff; */
+}
+
+#reveal {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    font-size: 20px;
+    background: linear-gradient(rgb(28, 27, 29), rgb(94, 92, 86));
+    color: beige;
+    padding: 15px 30px;
+    right: 11%;
+    top: 7%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 20px;
+    z-index: 999999999;
+}
+
+
+
+.moneyLevel {
+    position: fixed;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    color: #fff;
+    border-left: 4px solid rgb(213, 154, 27);
+
+    background: linear-gradient(rgb(28, 36, 48), rgb(0, 0, 0));
+    padding-top: 30px;
+    padding-left: 10px;
+
+    z-index: 99999;
+}
+
+
+.help1{
+    padding-left: 20px;
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.help1 #help1{
+    width: 45px;
+    background: none;
+    border: none;
+}
+.help1 #help1 img {
+    /* padding-left: 20px; */
+    width: 100%;
+    /* float: left; */
+}
+
+.help2{
+    padding-left: 20px;
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.help2 #help2{
+    width: 45px;
+    background: none;
+    border: none;
+}
+.help2 #help2 img {
+    width: 100%;
+}
+
+.help3{
+    padding-left: 20px;
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.help3 #help3{
+    width: 45px;
+    background: none;
+    border: none;
+}
+.help3 #help3 img {
+    width: 100%;
+}
+
+
+.star {
+    clear: both;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
+.bi-star-fill {
+    padding-right: 15px;
+    font-size: 25px;
+    color: rgb(250, 225, 2);
+}
+
+.money {
+    font-size: 18px;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+    line-height: 16px;
+    /* border: 1px solid #fff; */
+}
+
+/* .money strong {
+    color: rgb(213, 154, 27);
+} */
+
+
+
+
+
+.countSeconds {
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+canvas{
+    border: 1px solid #fff;
+    z-index: 9999;
+    position: fixed;
+    background-color: #F8F4EA;
+    top: 18%;
+    left: 40%;
+    transform: translateX(-50%) translateY(50%);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+

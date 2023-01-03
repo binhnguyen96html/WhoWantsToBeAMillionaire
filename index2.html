@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who wants to be a Millionaire</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@900&family=Merriweather:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style2.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="bigContainer">
+        <header>MILLIONAIRE</header>
+
+        <div id="seconds-count">
+            <h2 class="countTime">30</h2>
+
+            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>Layer 1</title>
+                    <circle id="circle" class="circle_animation" r="70" cy="81" cx="81" stroke-width="8"
+                        stroke="#6fdb6f" fill="none" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div id="seconds-count2">
+            <h2 class="countTime2">60</h2>
+            
+            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>Layer 1</title>
+                    <circle id="circle2" class="circle_animation2" r="70" cy="81" cx="81" stroke-width="8"
+                        stroke="#6fdb6f" fill="none" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div id="div1" class="stats"></div>
+        <button class="btn" id="new-question">Start</button>
+        <button class="letPlayBtn">Let's Play!</button>
+
+
+        <div id="ana-div"></div>
+
+        <div class="container" name='cont' id="cont">
+            <div class="row spacer"></div>
+            <div class="row">
+                <div class="col align-self-center">
+                    <div id="questionDiv">
+                        <span id="question"></span>
+                        <div id="invis">
+                            <button type="button" class="btn-block btn-lg answer " id="answer-1" value="1"></button>
+                            <button type="button" class="btn-block btn-lg answer" id="answer-2" value="2"></button>
+                            <button type="button" class="btn-block btn-lg answer" id="answer-3" value="3"></button>
+                            <button type="button" class="btn-block btn-lg answer" id="answer-4" value="4"></button>
+                        </div>
+                    </div>
+
+                    <div class="col pic">
+                        <button type="button" id="tryAgain">TRY AGAIN</button>
+
+                        <!-- dap an -->
+                        <h3 id="message">Message</h3>
+
+                        <!-- het thoi gian -->
+                        <h3 id="message2"></h3>
+
+                        <!-- Chuc mung -->
+                        <div class="playAgain">
+                            <h3 id="message3">Hello</h3>
+                            <button class="btn3" id="playAgain" type="button">Play Again</button>    
+                        </div>
+
+
+                        <!-- Hien thi thong tin cho help2 -->
+                        <h3 id="message4"></h3>
+
+                        <!-- <button type="button" id="tryAgain">Try again</button> -->
+                        <button class="btn2" id="reveal">Reveal Answer</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="moneyLevel">
+                <div class="help">
+                    <div class="help1"> <button type="button" id="help1"><img src="img/50.png"></button></div>
+                    <div class="help2"><button type="button" id="help2"><img src="img/phone.png" alt=""></button></div>
+                    <div class="help3"><button type="button" id="help3"><img src="img/audience.png" alt=""></button></div>
+                </div>
+
+                <div class="money">
+                    <div class="a15 star">
+                        <i class="0 bi bi-star-fill"></i>
+                        <strong>
+                            <p class="l15 moneyColor">15 - $1,000,000 </p>
+                        </strong>
+                    </div>
+
+                    <div class="a14 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l14 moneyColor">14 - $500,000 </p>
+
+                    </div>
+
+                    <div class="a13 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l13 moneyColor"> 13- $250,000 </p>
+
+                    </div>
+
+                    <div class="a12 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l12 moneyColor">12 - $125,000 </p>
+
+                    </div>
+
+                    <div class="a11 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l11 moneyColor">11 - $64,000 </p>
+
+                    </div>
+
+                    <div class="a10 star">
+                        <i class="bi bi-star-fill"></i>
+                        <strong>
+                            <p class="l10 moneyColor">10 - $32,000 </p>
+                        </strong>
+
+                    </div>
+
+                    <div class="a9 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l9 moneyColor">9 - $16,000 </p>
+
+                    </div>
+
+                    <div class="a8 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l8 moneyColor">8 - $8,000 </p>
+
+                    </div>
+
+                    <div class="a7 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l7 moneyColor">7 - $4,000 </p>
+
+                    </div>
+
+                    <div class="a6 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l6 moneyColor">6 - $2,000 </p>
+
+                    </div>
+
+                    <div class="a5 star">
+                        <i class="bi bi-star-fill"></i>
+                        <strong>
+                            <p class="l5 moneyColor">5 - $1,000 </p>
+                        </strong>
+
+                    </div>
+
+                    <div class="a4 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l4 moneyColor">4 - $500 </p>
+
+                    </div>
+
+                    <div class="a3 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l3 moneyColor">3 - $300 </p>
+
+                    </div>
+
+                    <div class="a2 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l2 moneyColor">2 - $200 </p>
+
+                    </div>
+
+                    <div class="a1 star">
+                        <i class="bi bi-star-fill"></i>
+                        <p class="l1 moneyColor">1 - $100 </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- music -->
+            <audio class="letPlayAudio hide" >
+                <source src="sound/letPlay.mp3" type="audio/mpeg">
+            </audio>
+            <audio class="level100Audio hide loop" >
+                <source src="sound/level100.mp3" type="audio/mpeg">
+            </audio>
+            <audio class="correctAudio hide" controls>
+                <source src="sound/correct.mp3" type="audio/mpeg">
+            </audio>
+            <audio class="wrongAudio hide" controls>
+                <source src="sound/wrong.mp3" type="audio/mpeg">
+            </audio>
+            <audio class="timeUpAudio hide" controls>
+                <source src="sound/timeUp.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+
+
+        <div class="countSeconds">0</div>
+
+        <canvas id="myChart" style="width:50%;max-width:600px; "></canvas>
+
+
+        <script src="app.js"></script>
+    </div>
+
+</body>
+
+</html>

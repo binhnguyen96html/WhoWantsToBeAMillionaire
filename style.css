@@ -1,0 +1,95 @@
+
+body{
+    background-image: url('img/background2.1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+#div1{
+    margin:360px auto 0px;
+    /* border: 1px solid #fff; */
+    text-align: center;
+    /* border: 1px solid rgb(182, 19, 19); */
+}
+
+#btn1{
+    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
+    border-radius:50px;
+    border: 4px solid #fff;
+    height: 80px;
+    width: 400px;
+    font-size: 25px;
+    margin-bottom: 130px;
+    color: rgb(213, 154, 27);
+
+}
+#btn1:hover{
+    background-color: rgb(77, 14, 56);
+}
+
+#btn2{
+    color: rgb(213, 154, 27);
+    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
+    border: 4px solid #fff;
+    border-radius:50px;
+    height: 70px;
+    font-size: 25px;
+    padding: 0px 50px;
+    
+}
+
+.text{
+    width: 90%;
+    background: linear-gradient(rgb(16, 27, 44), rgb(42, 9, 59));
+    font-size: 12px;
+    position: fixed;
+    /* top: 5%; */
+    /* border: 1px solid #fff; */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.paragraph{
+    margin: 0px 20px 0px 20px ;
+    color: #fff;
+}
+
+strong{
+    color: rgb(213, 154, 27);
+}
+
+.close{
+    font-size: 20px;
+    margin-left: 98%;
+}
+
+.sound{
+    color: #fff;
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    top: 20px;
+    left:40px;
+}
+.mute{
+    position: fixed;
+    color: #fff;
+    font-size: 30px;
+    top: 20px;
+    left:40px;
+}
+.visible{
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+.myAudio{
+    display: none;
+}
+
+.myAudio2 {
+    display: none;
+}
