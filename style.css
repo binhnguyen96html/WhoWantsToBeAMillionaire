@@ -50,10 +50,19 @@ body{
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+
+    display: flex;
 }
-.paragraph{
+.text .paragraph{
     margin: 0px 20px 0px 20px ;
     color: #fff;
+
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text .paragraph p{
+    width: 100%;
 }
 
 strong{
@@ -63,6 +72,8 @@ strong{
 .close{
     font-size: 20px;
     margin-left: 98%;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .sound{
