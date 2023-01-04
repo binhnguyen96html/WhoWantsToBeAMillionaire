@@ -301,14 +301,14 @@ svg {
 .playAgain {
     width: 84%;
     position: fixed;
-    top: 35%;
+    top: 34%;
 
 }
 
 .playAgain #message3 {
     /* border: 1px solid #fff; */
 
-    margin-top: 10px;
+    margin-top: 2%;
     margin-bottom: 0px;
     font-size: 60px;
     line-height: 50px;
