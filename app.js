@@ -387,7 +387,7 @@ function quizBuild(questionNum) {
     quiz[8] = new quizConstructor('In fancy hotels, it is traditional for what tantalizing treat to be left on your pillow?',
         'A: A pretzel', 'B: An apple', 'C: A mint', 'D: A photo of Wolf Blitzer', 3, false, false);
     quiz[9] = new quizConstructor('At a restaurant, someone who "foots the bill" does what?',
-        'A1: Kisses it', 'B: Rips it up', 'C: Hopes to get lucky', 'D: Pays it', 4, false, false);
+        'A: Kisses it', 'B: Rips it up', 'C: Hopes to get lucky', 'D: Pays it', 4, false, false);
     quiz[10] = new quizConstructor('Due to the geographical areas they represented, the opposing sides of the US Civil War were known by what names?',
         'A: The Hills and the Valleys', 'B: The Cities and the Farms', 'C: The North and the South', 'D: The Kool and the Gang', 3, false, false);
     quiz[11] = new quizConstructor('A person who is not a banker and lends money at an extremely high interest rate is known as what?',
